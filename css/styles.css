@@ -28,7 +28,6 @@
 
 */
 
-
 /* Sause
 
 
@@ -43,23 +42,6 @@
 
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Recipes of pasta 
 
@@ -80,9 +62,6 @@
 
 */
 
-
-
-
 /* The process of growing tomatoes 
 
 
@@ -98,14 +77,58 @@
 
 */
 
+/* /* Footer   */
+:root {
+  --bcg-color: #000000;
+  --link-text-family: "Inter";
+  --text-color-pramary: #f3f3f3;
+}
 
-/* Footer  
+.footer {
+  background-color: var(--bcg-color);
+}
+.footer-link {
+  font-family: var(--link-text-family), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--text-color-pramary);
+
+  text-decoration: none;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-item {
+}
+.footer-text {
+  font-family: "Roboto";
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--text-color-pramary);
+}
+.secondary-link{
+    color: var(--text-color-pramary);
+
+font-family: 'Roboto';
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.21;
 
 
+text-decoration-line: underline;
+}
 
+.container.footer{
+    width: 1100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 
-
-
-
-
-*/
+    display: flex;
+    flex-wrap: wrap;
+}
