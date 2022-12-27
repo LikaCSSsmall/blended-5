@@ -1,3 +1,15 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bcg-color);
+  color: var(--text-color-pramary);
+}
+
+
+
+
+
+
+
 /* header 
 
 
@@ -86,6 +98,8 @@
 
 .footer {
   background-color: var(--bcg-color);
+
+  border-top: 1px solid var(--text-color-pramary);
 }
 .footer-link {
   font-family: var(--link-text-family), sans-serif;
