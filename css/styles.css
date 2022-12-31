@@ -1,22 +1,15 @@
-<<<<<<< Updated upstream
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--bcg-color);
   color: var(--text-color-pramary);
-=======
+}
 :root {
   --bcg-color: #000000;
   --link-text-family: "Inter";
   --text-color-pramary: #f3f3f3;
   --secondary-text-color: #979797;
->>>>>>> Stashed changes
 }
 
-body {
-  font-family: "montserrat", sans-serif;
-  background-color: var(--bcg-color);
-  color: var(--text-color-pramary);
-}
 /* header 
 
 
@@ -96,24 +89,13 @@ body {
 
 */
 
-<<<<<<< Updated upstream
-/* /* Footer   */
-:root {
-  --bcg-color: #000000;
-  --link-text-family: "Inter";
-  --text-color-pramary: #f3f3f3;
-  --secondary-text-color: #979797;
-}
-=======
 /* Footer */
->>>>>>> Stashed changes
 
 .footer {
   background-color: var(--bcg-color);
 
   border-top: 1px solid var(--text-color-pramary);
 }
-<<<<<<< Updated upstream
 .container.footer {
   width: 1100px;
   padding-left: 15px;
@@ -121,8 +103,7 @@ body {
   margin: auto;
   padding-top: 24px;
   padding-bottom: 60px;
-
-=======
+}
 .container {
   width: 1100px;
   padding-left: 15px;
@@ -130,13 +111,11 @@ body {
   padding-top: 24px;
   padding-bottom: 60px;
   margin: auto;
->>>>>>> Stashed changes
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-<<<<<<< Updated upstream
 .text {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -150,17 +129,14 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   margin-right: 158px;
 
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-=======
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 158px;
 }
 
 .logo-accent {
@@ -171,7 +147,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
->>>>>>> Stashed changes
 
   color: var(--text-color-pramary);
 }
@@ -224,14 +199,12 @@ body {
   margin-right: 170px;
 }
 
-<<<<<<< Updated upstream
-=======
 .footer-list.adress {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  
+
   margin-right: 218px;
 }
 
@@ -246,7 +219,6 @@ body {
   margin: 0px;
   padding: 0px;
 }
->>>>>>> Stashed changes
 .footer-text {
   margin: 0px;
   font-family: "Roboto";
@@ -265,10 +237,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-<<<<<<< Updated upstream
 
-  text-decoration-line: underline;
-=======
   text-decoration-line: underline;
 
   margin: 0px;
@@ -298,5 +267,4 @@ body {
   text-decoration-line: underline;
 
   color: var(--text-color-pramary);
->>>>>>> Stashed changes
 }
