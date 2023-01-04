@@ -94,6 +94,7 @@ body {
 .footer {
   background-color: var(--bcg-color);
 
+<<<<<<< Updated upstream
   border-top: 1px solid var(--text-color-pramary);
 }
 .container.footer {
@@ -104,6 +105,8 @@ body {
   padding-top: 24px;
   padding-bottom: 60px;
 }
+=======
+>>>>>>> Stashed changes
 .container {
   width: 1100px;
   padding-left: 15px;
