@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CUCINA</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!--header-->
   <body>
-    <header class="header">
-      <nav>
-        <a href="./index.html" class="logo list">
-          <img
-            src="./image/logo.svg"
-            alt="tomato"
-            width="32"
-            height="32"
-          />cucina</a
-        >
-        <ul class="list">
-          <li><a href="./index.html" class="list">Home</a></li>
-          <li><a href="#" class="list">Store</a></li>
-          <li><a href="#" class="list">Recipes</a></li>
-          <li><a href="#" class="list">Gallery</a></li>
-        </ul>
-      </nav>
-      <button type="button">Contact us</button>
+    <header class="header list">
+      <div class="header-container">
+        <nav class="header-menu list">
+          <a href="./index.html" class="header-logo list">
+            <img
+              src="./image/logo.svg"
+              class="img-logo"
+              alt="tomato"
+              width="32"
+              height="32"
+            />
+            cucina
+          </a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="header-link list">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link list">Store</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link list">Recipes</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link list">Gallery</a>
+            </li>
+          </ul>
+          <button type="button" class="header-btn">Contact us</button>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -94,7 +116,6 @@
           </li>
         </ul>
       </section>
-
       <div class="daria">
         <!--Sauce-->
         <section>
@@ -167,52 +188,72 @@
       </div>
     </main>
 
-    <footer>
-      <a href="./kostya.html">
-        <img src="./image/logo.svg" alt="logo" />CUCINA</a
-      >
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Store</a>
-        </li>
-        <li>
-          <a href="">Recipes</a>
-        </li>
-        <li>
-          <a href="">Gallery</a>
-        </li>
-      </ul>
-      <address>
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/mtyc2TPKb7kbi2aH6"
-              >Elvia Elviaveien 1, 1234 Oslo <br />Gallery</a
-            >
+   
+    <footer class="footer">
+      <div class="container box">
+        <a class="footer-link logo" href="./index.html">
+          <img src="./image/logo.svg" alt="logo" /><span class="logo-accent"
+            >CUCINA</span
+          ></a
+        >
+        <ul class="footer-list nav">
+          <li class="footer-item">
+            <a class="footer-link" href="">Home</a>
           </li>
-          <li>
-            <a href="mailto:willie.jennings@example.com"
-              >willie.jennings@example.com</a
-            >
+          <li class="footer-item">
+            <a class="footer-link" href="">Store</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="">Recipes</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="">Gallery</a>
           </li>
         </ul>
-      </address>
-      <ul>
-        <li>
-          <a href=""> <img src="./image/t.svg" alt="logo" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./image/instagram.svg" alt="logo" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./image/youtube.svg" alt="logo" /></a>
-        </li>
-        <li>
-          <a href=""><img src="./image/twitter.svg" alt="logo" /></a>
-        </li>
-      </ul>
+        <address>
+          <ul class="footer-list adress">
+            <li class="footer-item">
+              <a
+                class="footer-link"
+                href="https://goo.gl/maps/mtyc2TPKb7kbi2aH6"
+                >Elvia Elviaveien 1, 1234 Oslo
+              </a>
+            </li>
+
+            <li class="footer-item">
+              <a
+                class="footer-link"
+                href="https://goo.gl/maps/mtyc2TPKb7kbi2aH6"
+                >Gallery</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:willie.jennings@example.com"
+                >willie.jennings@example.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-list networks">
+          <li class="footer-item">
+            <a href=""> <img src="./image/t.svg" alt="logo" /></a>
+          </li>
+          <li class="footer-item">
+            <a href=""><img src="./image/instagram.svg" alt="logo" /></a>
+          </li>
+          <li class="footer-item">
+            <a href=""><img src="./image/youtube.svg" alt="logo" /></a>
+          </li>
+          <li class="footer-item">
+            <a href=""><img src="./image/twitter.svg" alt="logo" /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text">
+        By using this website, you agree to the
+        <span class="footer-acent">Terms of Service</span> and
+        <span class="footer-acent">Privacy Policy</span>
+      </p>
     </footer>
   </body>
 </html>
