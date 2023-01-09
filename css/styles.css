@@ -1,14 +1,17 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--bcg-color);
-  color: var(--text-color-pramary);
-}
 :root {
   --bcg-color: #000000;
   --link-text-family: "Inter";
   --text-color-pramary: #f3f3f3;
   --secondary-text-color: #979797;
+  --link-hover-color: rgba(188, 26, 26, 0.5);
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bcg-color);
+  color: var(--text-color-pramary);
+}
+
 
 /* header 
 
@@ -92,21 +95,14 @@ body {
 /* Footer */
 
 .footer {
-  background-color: var(--bcg-color);
 
-<<<<<<< Updated upstream
-  border-top: 1px solid var(--text-color-pramary);
-}
-.container.footer {
-  width: 1100px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
   padding-top: 24px;
   padding-bottom: 60px;
+  background-color: var(--bcg-color);
+
+  border-top: 1px solid var(--text-color-pramary);
 }
-=======
->>>>>>> Stashed changes
+
 .container {
   width: 1100px;
   padding-left: 15px;
@@ -116,7 +112,7 @@ body {
   margin: auto;
 }
 
-.container.box {
+.box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -274,4 +270,10 @@ body {
   text-decoration-line: underline;
 
   color: var(--text-color-pramary);
+}
+
+.link:hover,
+.link:focus{
+  color:var(--link-hover-color) ;
+  
 }
