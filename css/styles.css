@@ -222,6 +222,8 @@ body {
 }
 
 .footer-item {
+  display: flex;
+  align-items: center;
   margin: 0px;
   padding: 0px;
 }
@@ -288,5 +290,7 @@ body {
 }
 
 .icon-addres{
-  display:block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
