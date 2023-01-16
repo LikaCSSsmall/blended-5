@@ -224,6 +224,7 @@ body {
 .footer-item {
   display: flex;
   align-items: center;
+  text-align: center;
   margin: 0px;
   padding: 0px;
 }
