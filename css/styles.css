@@ -11,6 +11,13 @@ body {
   color: var(--text-color-primary);
 }
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* header */
 
 .list {
@@ -61,7 +68,6 @@ body {
   margin-right: 16px;
 }
 
-
 .header-logo {
   color: var(--text-color-primary);
   padding-top: 24px;
@@ -90,22 +96,112 @@ body {
   border-radius: 16px;
 }
 
-/* Hero
+/* Hero  */
+.hero {
+  background: linear-gradient(
+    228.52deg,
+    rgba(111, 102, 102, 0.9) 4.71%,
+    rgba(16, 15, 15, 0.9) 39.77%,
+    rgba(16, 15, 15, 0.9) 44.21%
+  );
+}
+.presentation-list {
+  display: flex;
+  align-items: center;
+}
+.hero-title {
+  margin: 0;
+  max-width: 388px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
 
+.hero-text {
+  max-width: 447px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.22;
+}
 
+.hero-text > span {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.22;
+  color: rgba(188, 26, 26, 0.71);
+}
 
+.hero-btn {
+  cursor: pointer;
+  width: 302px;
+  height: 77px;
+  background-color: rgba(188, 26, 26, 0.2);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.23;
+  color: var(--text-color-primary);
+  margin-bottom: 48px;
+}
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: rgba(188, 26, 26, 0.5);
+}
+.hero-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+}
 
+.hero-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+}
+.hero-item > span {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.22;
+  margin-right: 12px;
+}
+.hero-product-presentation {
+  display: flex;
+  margin-left: auto;
+  margin-right: 47px;
+}
+.hero-product-list {
+  order: -1;
+}
+.hero-img {
+  filter: drop-shadow(-35px 0px 3px rgba(0, 0, 0, 0.25));
+}
 
-
-
-
-
-
-
-
-
-*/
+.hero-product-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.hero-social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.hero-social-list-link {
+  color: var(--text-color-primary);
+}
+.hero-social-list-link:is(:hover, :focus) {
+  color: rgba(188, 26, 26, 0.5);
+}
+.social-list-icon {
+  fill: currentColor;
+}
 
 /* Sause
 
@@ -184,7 +280,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-
 
 .text {
   font-family: "Inter", sans-serif;
