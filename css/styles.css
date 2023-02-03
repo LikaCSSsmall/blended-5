@@ -13,7 +13,6 @@ body {
   color: var(--text-color-pramary);
 }
 
-
 /* header 
 
 
@@ -267,26 +266,115 @@ body {
 
 */
 
-/* The process of growing tomatoes 
+/*====================================== The process of growing tomatoes ==============================*/
 
+* {
+  box-sizing: border-box;
+}
 
+.growing-tomatoes-section {
+  padding-top: 224px;
+  padding-bottom: 131px;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
 
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: inherit;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #6f6666;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active,
+.dot:hover {
+  background-color: #6f6666;
+  border: 1px solid #f3f3f3;
+}
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*====================================== The process of growing tomatoes ==============================*/
 
 /* Footer */
 
-
 .footer {
-
   padding-top: 24px;
   padding-bottom: 60px;
   background-color: var(--bcg-color);
@@ -294,13 +382,11 @@ body {
   border-top: 1px solid var(--text-color-pramary);
 }
 
-
 .box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .text {
@@ -318,7 +404,6 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  
 
   margin-right: 158px;
 
@@ -326,7 +411,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-
 }
 
 .logo-accent {
@@ -338,11 +422,7 @@ body {
   font-size: 20px;
   line-height: 24px;
 
-
- 
-
   color: var(--text-color-primary);
-
 }
 
 .footer-link {
@@ -351,24 +431,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-color: var(--text-color-primary);
- text-decoration: none;
-
+  color: var(--text-color-primary);
+  text-decoration: none;
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
   color: var(--link-hover-color);
 }
-
-
-
-
 
 .adress {
   margin-right: 218px;
 }
-
 
 .footer-list.nav {
   display: flex;
@@ -394,7 +468,6 @@ color: var(--text-color-primary);
   padding: 0px;
 }
 
-
 .footer-list.adress {
   display: flex;
   flex-direction: column;
@@ -407,7 +480,6 @@ color: var(--text-color-primary);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .footer-item {
@@ -419,20 +491,14 @@ color: var(--text-color-primary);
   gap: 16px;
 }
 
-
-
-
-.footer-item:not(:last-child){
+.footer-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
 .social-link:hover,
-.social-link:focus{
- fill: var(--link-hover-color);
+.social-link:focus {
+  fill: var(--link-hover-color);
 }
-
-
-
 
 .footer-text {
   margin: 0px;
@@ -474,25 +540,20 @@ color: var(--text-color-primary);
   line-height: 1.21;
 
   text-decoration-line: underline;
-color: var(--text-color-primary);
-
+  color: var(--text-color-primary);
 }
 
 .icon:hover,
-.icon:focus{
-  fill:var(--link-hover-color) ;
-  
+.icon:focus {
+  fill: var(--link-hover-color);
 }
 
-.icon{
+.icon {
   fill: #f3f3f3;
 }
 
-.icon-addres{
+.icon-addres {
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
-
-  
-
