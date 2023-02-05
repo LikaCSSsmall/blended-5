@@ -5,6 +5,7 @@
   --secondary-text-color: #979797;
   --link-hover-color: rgba(188, 26, 26, 0.5);
   --text-color-primary: #f3f3f3;
+  --transition: 250ms linear;
 }
 
 body {
@@ -12,8 +13,6 @@ body {
   background-color: var(--bcg-color);
   color: var(--text-color-pramary);
 }
-
-
 
 
 .container {
@@ -100,6 +99,8 @@ body {
 
 /* Hero  */
 .hero {
+  padding-top: 152px;
+  padding-bottom: 71px;
   background: linear-gradient(
     228.52deg,
     rgba(111, 102, 102, 0.9) 4.71%,
@@ -113,6 +114,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .hero-title {
   margin: 0;
   max-width: 388px;
@@ -120,6 +122,17 @@ body {
   font-size: 64px;
   line-height: 1.22;
   text-transform: uppercase;
+  display: flex;
+}
+
+.hero-title::before {
+  content: "";
+  width: 0px;
+  height: 153px;
+  border: 1px solid var(--text-color-primary);
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
 }
 
 .hero-text {
@@ -147,17 +160,33 @@ body {
   line-height: 1.23;
   color: var(--text-color-primary);
   margin-bottom: 48px;
+  transition: background-color var(--transition);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: rgba(188, 26, 26, 0.5);
 }
+
 .hero-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 31px;
+  min-width: 371px;
+}
+
+.second-hero-item > p {
+  width: 131px;
+}
+
+.second-hero-item::before {
+  content: "";
+  width: 0px;
+  height: 78px;
+  border: 1px solid var(--text-color-primary);
+  margin-right: 12px;
+  margin-right: 19px;
 }
 
 .hero-item {
@@ -167,21 +196,31 @@ body {
   display: flex;
   align-items: center;
 }
+
 .hero-item > span {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.22;
   margin-right: 12px;
 }
+
 .hero-product-presentation {
+  position: relative;
   display: flex;
   margin-left: auto;
   margin-right: 47px;
+  width: 432px;
+  height: 577px;
 }
+
 .hero-product-list {
   order: -1;
 }
+
 .hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   filter: drop-shadow(-35px 0px 3px rgba(0, 0, 0, 0.25));
 }
 
@@ -191,18 +230,47 @@ body {
   line-height: 1.25;
   text-transform: uppercase;
 }
+
+.hero-product-item.first {
+  position: absolute;
+  top: 0;
+  left: 31px;
+}
+
+.hero-product-item.second {
+  position: absolute;
+  top: 164px;
+  left: 18px;
+}
+
+.hero-product-item.thirth {
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+
+.hero-product-item.forth {
+  position: absolute;
+  bottom: 7px;
+  left: 21px;
+}
+
 .hero-social-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 }
+
 .hero-social-list-link {
   color: var(--text-color-primary);
+  transition: color var(--transition);
 }
+
 .hero-social-list-link:is(:hover, :focus) {
   color: rgba(188, 26, 26, 0.5);
 }
+
 .social-list-icon {
   fill: currentColor;
 }
@@ -256,27 +324,114 @@ body {
 
 
 
+/* growing-tomatoes--*/
 
-/* The process of growing tomatoes 
+* {
+  box-sizing: border-box;
+}
 
+.growing-tomatoes-section {
+  padding-top: 224px;
+  padding-bottom: 131px;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
 
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: inherit;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #6f6666;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active,
+.dot:hover {
+  background-color: #6f6666;
+  border: 1px solid #f3f3f3;
+}
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-*/
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 /* Footer */
 
-
 .footer {
-
   padding-top: 24px;
   padding-bottom: 60px;
   background-color: var(--bcg-color);
@@ -284,13 +439,11 @@ body {
   border-top: 1px solid var(--text-color-pramary);
 }
 
-
 .box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .text {
@@ -308,7 +461,6 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  
 
   margin-right: 158px;
 
@@ -316,7 +468,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-
 }
 
 .logo-accent {
@@ -328,11 +479,7 @@ body {
   font-size: 20px;
   line-height: 24px;
 
-
- 
-
   color: var(--text-color-primary);
-
 }
 
 .footer-link {
@@ -341,24 +488,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-color: var(--text-color-primary);
- text-decoration: none;
-
+  color: var(--text-color-primary);
+  text-decoration: none;
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus {
   color: var(--link-hover-color);
 }
-
-
-
-
 
 .adress {
   margin-right: 218px;
 }
-
 
 .footer-list.nav {
   display: flex;
@@ -384,7 +525,6 @@ color: var(--text-color-primary);
   padding: 0px;
 }
 
-
 .footer-list.adress {
   display: flex;
   flex-direction: column;
@@ -397,7 +537,6 @@ color: var(--text-color-primary);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .footer-item {
@@ -409,20 +548,14 @@ color: var(--text-color-primary);
   gap: 16px;
 }
 
-
-
-
-.footer-item:not(:last-child){
+.footer-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
 .social-link:hover,
-.social-link:focus{
- fill: var(--link-hover-color);
+.social-link:focus {
+  fill: var(--link-hover-color);
 }
-
-
-
 
 .footer-text {
   margin: 0px;
@@ -464,25 +597,20 @@ color: var(--text-color-primary);
   line-height: 1.21;
 
   text-decoration-line: underline;
-color: var(--text-color-primary);
-
+  color: var(--text-color-primary);
 }
 
 .icon:hover,
-.icon:focus{
-  fill:var(--link-hover-color) ;
-  
+.icon:focus {
+  fill: var(--link-hover-color);
 }
 
-.icon{
+.icon {
   fill: #f3f3f3;
 }
 
-.icon-addres{
+.icon-addres {
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
-
-  
-
