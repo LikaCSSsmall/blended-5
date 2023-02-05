@@ -14,35 +14,7 @@ body {
 }
 
 
-/* header 
 
-
-
-
-
-
-
-
-
-
-*/
-
-/* Hero
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 .container {
   width: 1100px;
@@ -134,7 +106,9 @@ body {
     rgba(16, 15, 15, 0.9) 39.77%,
     rgba(16, 15, 15, 0.9) 44.21%
   );
+  padding-top: 100px;
 }
+
 .presentation-list {
   display: flex;
   align-items: center;
@@ -233,39 +207,55 @@ body {
   fill: currentColor;
 }
 
-/* Sause
+/* Sause */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.sauce-list {
+  color: #f3f3f3;
+}
+
+.sauce-item-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.22;
+}
+
+.sauce-item-text {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.sauce-item-btn {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #f3f3f3;
+  background: rgba(188, 26, 26, 0.2);
+}
+
+/* Recipes of pasta */ 
+
+.recipes-item-text {
+  font-size: 32px;
+  line-height: 1.22;
+  color: #f3f3f3;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-*/
-
-/* Recipes of pasta 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 /* The process of growing tomatoes 
 
