@@ -5,6 +5,7 @@
   --secondary-text-color: #979797;
   --link-hover-color: rgba(188, 26, 26, 0.5);
   --text-color-primary: #f3f3f3;
+  --transition: 250ms linear;
 }
 
 body {
@@ -127,6 +128,8 @@ body {
 
 /* Hero  */
 .hero {
+  padding-top: 152px;
+  padding-bottom: 71px;
   background: linear-gradient(
     228.52deg,
     rgba(111, 102, 102, 0.9) 4.71%,
@@ -134,10 +137,12 @@ body {
     rgba(16, 15, 15, 0.9) 44.21%
   );
 }
+
 .presentation-list {
   display: flex;
   align-items: center;
 }
+
 .hero-title {
   margin: 0;
   max-width: 388px;
@@ -145,6 +150,17 @@ body {
   font-size: 64px;
   line-height: 1.22;
   text-transform: uppercase;
+  display: flex;
+}
+
+.hero-title::before {
+  content: "";
+  width: 0px;
+  height: 153px;
+  border: 1px solid var(--text-color-primary);
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
 }
 
 .hero-text {
@@ -172,17 +188,33 @@ body {
   line-height: 1.23;
   color: var(--text-color-primary);
   margin-bottom: 48px;
+  transition: background-color var(--transition);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: rgba(188, 26, 26, 0.5);
 }
+
 .hero-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 31px;
+  min-width: 371px;
+}
+
+.second-hero-item > p {
+  width: 131px;
+}
+
+.second-hero-item::before {
+  content: "";
+  width: 0px;
+  height: 78px;
+  border: 1px solid var(--text-color-primary);
+  margin-right: 12px;
+  margin-right: 19px;
 }
 
 .hero-item {
@@ -192,21 +224,31 @@ body {
   display: flex;
   align-items: center;
 }
+
 .hero-item > span {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.22;
   margin-right: 12px;
 }
+
 .hero-product-presentation {
+  position: relative;
   display: flex;
   margin-left: auto;
   margin-right: 47px;
+  width: 432px;
+  height: 577px;
 }
+
 .hero-product-list {
   order: -1;
 }
+
 .hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   filter: drop-shadow(-35px 0px 3px rgba(0, 0, 0, 0.25));
 }
 
@@ -216,18 +258,47 @@ body {
   line-height: 1.25;
   text-transform: uppercase;
 }
+
+.hero-product-item.first {
+  position: absolute;
+  top: 0;
+  left: 31px;
+}
+
+.hero-product-item.second {
+  position: absolute;
+  top: 164px;
+  left: 18px;
+}
+
+.hero-product-item.thirth {
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+
+.hero-product-item.forth {
+  position: absolute;
+  bottom: 7px;
+  left: 21px;
+}
+
 .hero-social-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 }
+
 .hero-social-list-link {
   color: var(--text-color-primary);
+  transition: color var(--transition);
 }
+
 .hero-social-list-link:is(:hover, :focus) {
   color: rgba(188, 26, 26, 0.5);
 }
+
 .social-list-icon {
   fill: currentColor;
 }
